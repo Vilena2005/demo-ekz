@@ -1,9 +1,9 @@
 <?php
 /** @var \app\models\Request $model */
     $classStatus = match ($model->status) {
-        'new' =>'border-danger',
+        'new' =>'border-danger bg-danger-card',
         'in_progress' =>'border-primary',
-        'done' =>'border-success',
+        'done' =>'border-success bg-success-card',
     }
 
 ?>
@@ -25,7 +25,7 @@
 
         <?php
             if ($model->status === 'new' || $model->status === 'in_progress') {
-                echo \yii\helpers\Html::a('Изменить статус', ['/request/update', 'id' => $model->id], ['class' => 'btn btn-primary']);
+                echo \yii\helpers\Html::a('Изменить статус', ['/request/update', 'id' => $model->id], ['class' => 'btn btn-danger']);
             }
         ?>
 

@@ -86,3 +86,13 @@ a.desc:after {
 .form-group {
     margin-bottom: 1rem;
 }
+
+
+
+.bg-success-card {
+    background-color: lightcyan;
+}
+
+.bg-danger-card {
+    background-color: lightpink;
+}

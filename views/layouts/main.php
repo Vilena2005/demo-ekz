@@ -32,9 +32,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <header id="header">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Html::img('/web/logo.png', ['alt' => Yii::$app->name]),
         'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
+        'options' => ['class' => 'navbar-expand-md navbar-dark fixed-top bg-primary'],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
@@ -68,10 +68,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </main>
 
-<footer id="footer" class="mt-auto py-3 bg-light">
+<footer id="footer" class="mt-auto py-3 bg-primary">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; Корочки есть <?= date('Y') ?></div>
+            <div class="col-md-6 text-center text-md-start text-light">&copy; Корочки.есть <?= date('Y') ?></div>
         </div>
     </div>
 </footer>

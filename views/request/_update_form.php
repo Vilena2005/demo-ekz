@@ -34,7 +34,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'status')->dropDownList(['new' => 'Новая', 'in_progress' => 'В процессе обучения', 'done' => 'Завершено'  ]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Отправить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Отправить', ['class' => 'btn btn-danger']) ?>
     </div>
 
     <?php \yii\bootstrap5\ActiveForm::end(); ?>

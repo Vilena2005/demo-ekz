@@ -44,7 +44,7 @@ $this->title = 'Вход';
 
             <div class="form-group">
                 <div>
-                    <?= Html::submitButton('Войти', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Войти', ['class' => 'btn btn-danger', 'name' => 'login-button']) ?>
                 </div>
             </div>
 

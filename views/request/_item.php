@@ -1,11 +1,10 @@
 <?php
 /** @var \app\models\Request $model */
     $classStatus = match ($model->status) {
-        'new' =>'border-danger',
+        'new' =>'border-danger bg-danger-card',
         'in_progress' =>'border-primary',
-        'done' =>'border-success',
+        'done' =>'border-success bg-success-card',
     }
-
 ?>
 
 <div class="card text-center mb-2 <?= $classStatus ?>">

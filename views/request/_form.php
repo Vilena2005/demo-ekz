@@ -26,10 +26,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'started_at')->input('date') ?>
 
-    <?= $form->field($model, 'payment_method')->dropDownList(['cash' => 'Наличные', 'card' => 'Банковская карта', ], ['prompt' => 'Способ оплаты']) ?>
+    <?= $form->field($model, 'payment_method')->dropDownList(['cash' => 'Наличные', 'card' => 'Банковская карта'], ['prompt' => 'Способ оплаты']) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Отправить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Отправить', ['class' => 'btn btn-danger']) ?>
     </div>
 
     <?php \yii\bootstrap5\ActiveForm::end(); ?>

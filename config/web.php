@@ -11,6 +11,7 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'name' => 'Корочки.есть',
     'language' => 'ru-RU',
     'components' => [
         'request' => [
