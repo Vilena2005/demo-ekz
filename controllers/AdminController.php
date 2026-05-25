@@ -36,7 +36,7 @@ class AdminController extends \yii\web\Controller
             'query' => Request::find(),
 
             'pagination' => [
-                'pageSize' => 50
+                'pageSize' => 5
             ],
             'sort' => [
                 'defaultOrder' => [
